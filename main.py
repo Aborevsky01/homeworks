@@ -1,7 +1,3 @@
-# 1. Вам представлен код с реализацией алгоритма Нидлмана-Вунша. Функция needleman_wunsch принимает параметры: match=2, mismatch=-1, gap=-1
-# поэксперементируйте с параметрами и посморите, как меняется выравнивание и score. Какие выводы можно сделать? 
-
-
 from tqdm.notebook import tqdm
 import itertools
 
@@ -68,7 +64,6 @@ print(empty_arr, zeros_arr, ones_arr, random_arr, sep='\n\n')
 diag_mat = np.diag(np.arange(1, 6))
 diag_mat
 
-# 4. Напиши функцию, которая принимает матрицу и проверяет, является ли она единичной. В ответе возвращается True или False
 
 def is_identity_matrix_np(matrix):
     return np.array_equal(matrix, np.eye(len(matrix)))
